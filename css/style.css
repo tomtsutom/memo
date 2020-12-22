@@ -99,6 +99,7 @@ hr {
 }
 .posttime {
   float: right;
+  font-family: monospace;
 }
 .logopng {
   width: 200px;
