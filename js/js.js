@@ -1,8 +1,12 @@
 var web_style = $("#web_style").val();
 
 document.addEventListener('DOMContentLoaded', (event) => {
-    document.querySelectorAll('pre').forEach((block) => {
-        hljs.highlightBlock(block);
+    document.querySelectorAll('figure').forEach((block) => {
+        const gutterEl = block.querySelector('td.gutter > pre');
+        hljs.highlightBlock(gutterEl);
+        const codeEl = block.querySelector('td.code > pre');
+        codeEl.classList.add(...block.classList);
+        hljs.highlightBlock(codeEl);
     });
 });
 
