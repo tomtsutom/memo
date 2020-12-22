@@ -109,6 +109,11 @@ hr {
   font-size: 24px;
   line-height: 40px;
   margin-bottom: 10px;
+  font-weight: 600;
+}
+.posts .post-meta {
+  text-align: right;
+  font-size: 0.8em;
 }
 .posts .post-content a {
   color: #699be9;
@@ -137,16 +142,6 @@ hr {
 }
 .post-content .anchor:focus {
   outline: none;
-}
-.post-content h1::before,
-.post-content h2::before,
-.post-content h3::before,
-.post-content h4::before,
-.post-content h5::before,
-.post-content h6::before {
-  content: "#";
-  padding-right: 10px;
-  color: #6d9ee7;
 }
 .post-content h1 .octicon-link,
 .post-content h2 .octicon-link,
@@ -347,7 +342,7 @@ hr {
   text-decoration: underline;
 }
 .post-content strong {
-  font-weight: 600;
+  font-weight: 700;
 }
 .post-content hr {
   background: transparent;
@@ -391,7 +386,7 @@ hr {
 }
 .post-content h1,
 .post-content h2 {
-  font-weight: 600;
+  font-weight: 700;
 }
 .post-content h2 {
   font-size: 24px;
@@ -401,7 +396,7 @@ hr {
 }
 .post-content h3,
 .post-content h4 {
-  font-weight: 600;
+  font-weight: 700;
 }
 .post-content h4 {
   font-size: 16px;
@@ -411,7 +406,7 @@ hr {
 }
 .post-content h5,
 .post-content h6 {
-  font-weight: 600;
+  font-weight: 700;
 }
 .post-content h6 {
   font-size: 12px;
@@ -525,7 +520,7 @@ hr {
   line-height: 1.25 !important;
 }
 .post-content .text-bold {
-  font-weight: 600 !important;
+  font-weight: 700 !important;
 }
 .post-content:before {
   content: "";
@@ -594,7 +589,7 @@ hr {
 .post-content h4,
 .post-content h5,
 .post-content h6 {
-  font-weight: 600;
+  font-weight: 700;
   line-height: 1.25;
   margin-bottom: 16px;
   margin-top: 24px;
@@ -648,7 +643,7 @@ hr {
 .post-content dl dt {
   font-size: 1em;
   font-style: italic;
-  font-weight: 600;
+  font-weight: 700;
   margin-top: 16px;
   padding: 0;
 }
@@ -662,7 +657,7 @@ hr {
   width: 100%;
 }
 .post-content table th {
-  font-weight: 600;
+  font-weight: 700;
 }
 .post-content table td,
 .post-content table th {
