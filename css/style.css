@@ -1,9 +1,54 @@
+@font-face {
+  font-family: "Yu Gothic";
+  src: local("Yu Gothic Medium");
+  font-weight: 100;
+}
+@font-face {
+  font-family: "Yu Gothic";
+  src: local("Yu Gothic Medium");
+  font-weight: 200;
+}
+@font-face {
+  font-family: "Yu Gothic";
+  src: local("Yu Gothic Medium");
+  font-weight: 300;
+}
+@font-face {
+  font-family: "Yu Gothic";
+  src: local("Yu Gothic Medium");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Yu Gothic";
+  src: local("Yu Gothic Bold");
+  font-weight: bold;
+}
+@font-face {
+  font-family: "Helvetica Neue";
+  src: local("Helvetica Neue Regular");
+  font-weight: 100;
+}
+@font-face {
+  font-family: "Helvetica Neue";
+  src: local("Helvetica Neue Regular");
+  font-weight: 200;
+}
+@media all and (-ms-high-contrast: none) {
+  html {
+    font-family: Verdana, Meiryo, sans-serif;
+  }
+}
+@media all and (-ms-high-contrast: active) {
+  html {
+    font-family: Verdana, Meiryo, sans-serif;
+  }
+}
 body {
   background-color: #404040;
   color: #d2d2d2;
   font-weight: 400;
   font-size: 14px;
-  font-family: "Menlo", "Meslo LG", monospace;
+  font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", YuGothic, Verdana, Meiryo, "M+ 1p", sans-serif;
   line-height: 1.725;
   text-rendering: geometricPrecision;
 }
@@ -16,9 +61,12 @@ a:hover {
   color: #699be9;
   text-decoration: underline;
 }
+hr {
+  margin: 15px 0;
+}
 .footer {
   text-align: center;
-  margin-top: 30px;
+  margin: 20px 0;
   color: #ccc;
 }
 .clear {
@@ -28,7 +76,7 @@ a:hover {
   width: 100%;
 }
 .hd {
-  width: 650px;
+  width: 800px;
   height: 100%;
   margin: auto;
 }
@@ -106,6 +154,7 @@ hr {
   font-weight: 600;
 }
 .posts .post-meta {
+  font-family: monospace;
   text-align: right;
   font-size: 0.8em;
 }
@@ -115,13 +164,15 @@ hr {
 .posts .fhr {
   margin-top: 20px;
 }
-.posts .highlight .gutter .hljs {
-  border-top-left-radius: 5px;
-  border-bottom-left-radius: 5px;
+.posts .highlight .gutter {
+  text-align: right;
+  min-width: 40px;
+}
+.posts .highlight .gutter .hljs .line {
+  color: #aaa;
 }
 .posts .highlight .code .hljs {
-  border-top-right-radius: 5px;
-  border-bottom-right-radius: 5px;
+  padding-left: 10px;
 }
 .post-content .octicon {
   display: inline-block;
@@ -407,6 +458,7 @@ hr {
 }
 .post-content p {
   margin-bottom: 10px;
+  line-height: 2em;
   margin-top: 0;
 }
 .post-content blockquote {
@@ -573,7 +625,7 @@ hr {
   color: #444d56;
   display: inline-block;
   font-size: 11px;
-  line-height: 10px;
+  line-height: 2em;
   padding: 3px 5px;
   vertical-align: middle;
 }
@@ -678,7 +730,7 @@ hr {
   margin: 0;
   padding: 0.2em 0.4em;
   color: #fff;
-  vertical-align: text-top;
+  vertical-align: middle;
 }
 .post-content pre {
   word-wrap: normal;
